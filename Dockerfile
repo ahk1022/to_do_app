@@ -4,7 +4,7 @@ WORKDIR  /app
 
 COPY . . 
 
-RUN pip isntall -r requirements.txt
+RUN pip install -r requirements.txt
 
 RUN python manage.py migrate
 RUN python manage.py createsuperuser
